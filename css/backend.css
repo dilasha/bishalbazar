@@ -1,0 +1,122 @@
+.main {
+	background: white;
+}
+.content {
+	padding-top: 20px !important;
+}
+header .logo {
+	margin-top: 20px !important;
+}
+header nav ul {
+	margin-top: 60px !important;
+}
+.fa-bars:hover, .fa-bars:focus, .fa-bars:active {
+	color: rgb(178, 178, 178) !important;
+}
+header ul.social li a {
+	background: none !important;
+}
+.pill-row {
+	background: black;
+	color: white;
+	padding: 0% 2% 0% 2%;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+	text-decoration: none;
+	background-color: #000;
+	color: rgb(160, 160, 160);
+}
+.nav-pills > li > a {
+	border: none;
+	color: white;
+	font-size: 12px;
+	letter-spacing: 1.5px;
+}
+.right-pill {
+	text-align: right;
+}
+.admin-form {
+	background: white;
+	height: 45%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 2% 2% 3% 2%;
+	background: rgba(0,0,0,0.9) !important;
+}
+.admin-form-title {
+	text-align: right;
+	padding: 5% 0% 5% 0% !important;
+	display: block;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	font-size: 15px;
+	color: white;
+}
+.btn-black {
+	background: black;
+	color: white;
+	border: 1px solid white;
+	border-radius: 0px;
+	width: 80px;
+}
+.btn-black:hover, .btn-black:active, .btn-black:focus {
+	color: white;
+	background: rgb(30, 30, 30);
+	border: 1px solid white;
+}
+.admin-log-page {
+	background-image: url('../images/admin-bg.jpg') !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.err-admin {
+	text-align: center;
+	background: rgb(255, 213, 213);
+	color: rgb(179, 0, 0);
+	font-family: sans-serif;
+	font-size: 11px;
+	letter-spacing: 0.5px;
+	padding: 1%;
+	width: 100%;
+}
+.btn-default {
+	color: #FFF;
+	background-color: #000000;
+	border-color: #FFFFFF;
+	border-radius: 0px;
+	letter-spacing: 1.5;
+}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+	color: #FFF;
+	background-color: #2A2A2A;
+	border-color: #FFFFFF;
+}
+.link {
+	color: #B20000;
+	letter-spacing: 0.8px;
+}
+.link:hover {
+	text-decoration: none;
+	color: #424242 !important;
+}
+header nav ul li a:hover, header nav ul li a.selected, header nav ul li a:active, header nav ul li a:focus {
+	color: #969595;
+	text-decoration: none !important;
+}
+ol {
+	margin-top: 2em !important;
+	margin-left: 1em;
+}
+.badge-back{
+	color: black;
+	background: white;
+	line-height: 0.6;
+}
+.badge-back:hover{
+	background: rgb(160, 160, 160);
+}
