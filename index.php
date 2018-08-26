@@ -1,12 +1,12 @@
 <?php
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
 //include ($doc_root . '/Team6/connect.php');
-include ($doc_root . '/Team6/includes/head.php');
+include ($doc_root . '/includes/head.php');
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="http://localhost/Team6/css/carousel.css" />
+		<link rel="stylesheet" type="text/css" href="http://quiet-ravine-14266.herokuapp.com/css/carousel.css" />
 	</head>
 
 	<body>
@@ -23,7 +23,7 @@ include ($doc_root . '/Team6/includes/head.php');
 					while ($row = oci_fetch_assoc($parse)) {
 						echo "<li>";
 						echo "<a href='" . $row['SLIDERLINK'] . "'>";
-						echo "<img style='//height:100%;' data-description='" . $row['SLIDERDESC'] . "' src='http://localhost/Team6/images/sliders/" . $row['SLIDERIMG'] . "' />";
+						echo "<img style='//height:100%;' data-description='" . $row['SLIDERDESC'] . "' src='http://http://quiet-ravine-14266.herokuapp.com/images/sliders/" . $row['SLIDERIMG'] . "' />";
 						echo "<span><h2 style='font-size=20px !important;' >" . $row['SLIDERTITLE'] . "</h2></span>";
 						echo "</a>";
 						echo "</li>";
@@ -54,12 +54,12 @@ include ($doc_root . '/Team6/includes/head.php');
 								echo "<table>";
 								echo "<tr>";
 								echo "<td height='200' class='fill' colspan='2'>";
-								echo "<img style='max-height:200px;' class='prod-img img-responsive' src='http://localhost/Team6/images/products/" . $row_c['PRODIMG'] . "' /></td>";
+								echo "<img style='max-height:200px;' class='prod-img img-responsive' src='http://quiet-ravine-14266.herokuapp.com/images/products/" . $row_c['PRODIMG'] . "' /></td>";
 								echo "</tr>";
 								echo "<tr>";
-								echo "<td class='prod-title'><a href='http://localhost/Team6/site/product_view.php?id=" . $row_c['PRODID'] . "' >" . $row_c['PRODNAME'] . " </a></td>";
+								echo "<td class='prod-title'><a href='http://quiet-ravine-14266.herokuapp.com/site/product_view.php?id=" . $row_c['PRODID'] . "' >" . $row_c['PRODNAME'] . " </a></td>";
 								echo "<td rowspan='2'>";
-								echo "<a href='http://localhost/Team6/site/product_view.php?id=" . $row_c['PRODID'] . "' class='btn btn-cart pull-right'>";
+								echo "<a href='http://quiet-ravine-14266.herokuapp.com/site/product_view.php?id=" . $row_c['PRODID'] . "' class='btn btn-cart pull-right'>";
 								echo "<span class='fa fa-eye'> </span>";
 								echo "  View Details";
 								echo "</a></td>";
@@ -80,7 +80,7 @@ include ($doc_root . '/Team6/includes/head.php');
 
 			</div>
 			<?php
-			include ($doc_root . '/Team6/includes/footer.php');
+			include ($doc_root . '/includes/footer.php');
 			?>
 			<script>
 				$(document).ready(function() {
