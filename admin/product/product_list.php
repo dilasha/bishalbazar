@@ -59,7 +59,7 @@
 								echo "<td>" . $rowCat['CATNAME'] . "</td>";
 							}
 							echo "<td>" . $row['PRODNAME'] . "</td>";
-							echo "<td><img  class='img-responsive' style='max-height:100px;' src='http://localhost/Team6/images/products/" . $row['PRODIMG'] . "' /></td>";
+							echo "<td><img  class='img-responsive' style='max-height:100px;' src='http://quiet-ravine-14266.herokuapp.com/images/products/" . $row['PRODIMG'] . "' /></td>";
 							echo "<td> $" . $row['PRODRATE'] . "</td>";
 							echo "<td>" . $row['PRODFEAT'] . "</td>";
 							echo "<td><a class='link' href='product_edit.php?id=" . $row['PRODID'] . "'>Edit</a></td>";

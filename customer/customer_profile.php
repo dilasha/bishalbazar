@@ -9,7 +9,7 @@ include ($doc_root . '/Team6/connect.php');
 		include ($doc_root . '/Team6/includes/head.php');
 		if (!isset($_SESSION['user'])) {
 			echo "<script>alert('You do not have permission to acces this page.')</script>";
-			echo "<script>window.location='http://localhost/Team6/login_register.php'</script>";
+			echo "<script>window.location='http://quiet-ravine-14266.herokuapp.com/login_register.php'</script>";
 		}
 		$id = $_SESSION['userid'];
 		$query = "SELECT * FROM user_account WHERE userID=$id";
@@ -37,7 +37,7 @@ include ($doc_root . '/Team6/connect.php');
 		<div class="container">
 			<ul class="breadcrumb">
 				<li>
-					<a href="http://localhost/Team6/index.php">Home</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/index.php">Home</a>
 				</li>
 				<li class="active">
 					Profile
@@ -46,7 +46,7 @@ include ($doc_root . '/Team6/connect.php');
 			<h3>Profile</h3>
 			<div class="content row">
 			<div class="col-md-5">
-				<img class="img-responsive" src="http://localhost/Team6/images/users/<?php echo $photo; ?>" />
+				<img class="img-responsive" src="http://quiet-ravine-14266.herokuapp.com/images/users/<?php echo $photo; ?>" />
 			</div>
 			<div class="col-md-7">
 				<a href="customer_edit.php?id=<?php echo $id; ?>" class="btn btn-cart pull-right"> <span class="fa fa-edit"></span>  Edit Profile</a>

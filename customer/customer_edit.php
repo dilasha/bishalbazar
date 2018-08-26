@@ -9,7 +9,7 @@ include ($doc_root . '/Team6/connect.php');
 		include ($doc_root . '/Team6/includes/head.php');
 		if (!isset($_SESSION['user'])) {
 			echo "<script>alert('You do not have permission to acces this page.')</script>";
-			echo "<script>window.location='http://localhost/Team6/login_register.php'</script>";
+			echo "<script>window.location='http://quiet-ravine-14266.herokuapp.com/login_register.php'</script>";
 		}
 		if (isset($_REQUEST['id'])) {
 			$id = $_REQUEST['id'];
@@ -70,10 +70,10 @@ include ($doc_root . '/Team6/connect.php');
 		<div class="container">
 			<ul class="breadcrumb">
 				<li>
-					<a href="http://localhost/Team6/index.php">Home</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/index.php">Home</a>
 				</li>
 				<li>
-					<a href="http://localhost/Team6/customer/customer_profile.php">Profile</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/customer/customer_profile.php">Profile</a>
 				</li>
 				<li class="active">
 					Profile Edit
@@ -104,7 +104,7 @@ include ($doc_root . '/Team6/connect.php');
 						<label class="col-sm-2 control-label">Account Picture</label>
 						<div class="col-sm-10">
 							<input class="input-sm" name="imgPic" type="file" />
-							<img height="200" src="http://localhost/Team6/images/users/<?php echo $photo; ?>" />
+							<img height="200" src="http://quiet-ravine-14266.herokuapp.com/images/users/<?php echo $photo; ?>" />
 						</div>
 					</div>
 					<div class="form-group">

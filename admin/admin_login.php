@@ -22,7 +22,7 @@ if (isset($_POST['btnAdminLog'])) {
 			$_SESSION['user'] = $uName;
 			$_SESSION['role'] = "Admin";
 			$_SESSION['userid'] = $uID;
-			$url = "http://localhost/Team6/admin/admin_dash.php";
+			$url = "http://quiet-ravine-14266.herokuapp.com/admin/admin_dash.php";
 			echo "<script>window.location='" . $url . "';</script>";
 		} else {
 			$errormsg = "<div class='form-group'><div class='err-admin'><span class='fa fa-exclamation'></span> Your account is awaiting verification/reactivation.</div></div>";
@@ -39,7 +39,7 @@ if (isset($_POST['btnAdminLog'])) {
 	<head></head>
 	<body class="admin-log-page row">
 		<div class="content col-md-3 admin-form">
-			<a href="http://localhost/Team6/"><img class="img-responsive" src="http://localhost/Team6/images/logo-w.png"></a>
+			<a href="http://quiet-ravine-14266.herokuapp.com/"><img class="img-responsive" src="http://quiet-ravine-14266.herokuapp.com/images/logo-w.png"></a>
 			<div class="row admin-form-title">
 				Administrator Login
 			</div>

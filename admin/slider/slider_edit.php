@@ -78,7 +78,7 @@ if (isset($_POST['btnEditSlider'])) {
 							<label class="col-sm-2 control-label">Slider Image</label>
 							<div class="col-sm-10">
 								<input name="imgSlider" placeholder="Slider Image" type="file" class="input-sm">
-								<img src="http://localhost/Team6/images/sliders/<?php echo $editSliderImg; ?>" height=200 />
+								<img src="http://quiet-ravine-14266.herokuapp.com/images/sliders/<?php echo $editSliderImg; ?>" height=200 />
 							</div>
 						</div>
 						<div class="form-group">

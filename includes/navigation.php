@@ -6,11 +6,11 @@
 			<?php
 			if (isset($_SESSION['user'])) {
 				echo "<li><a class='greet'>Hello," . $_SESSION['user'] . "!</a></li>";
-				echo "<li><a href='http://localhost/Team6/cart/cart_list.php'>Cart  <span class='fa fa-shopping-cart'></span></a></li>";
-				echo "<li><a href='http://localhost/Team6/customer/purchase_history.php'>Purchase History  <span class='fa fa-clock-o'></span></a></li>";
+				echo "<li><a href='http://quiet-ravine-14266.herokuapp.com/cart/cart_list.php'>Cart  <span class='fa fa-shopping-cart'></span></a></li>";
+				echo "<li><a href='http://quiet-ravine-14266.herokuapp.com/customer/purchase_history.php'>Purchase History  <span class='fa fa-clock-o'></span></a></li>";
 
 			} else {
-				echo "<li><a href='http://localhost/Team6/login_register.php'>SIGN IN | REGISTER</a></li>";
+				echo "<li><a href='http://quiet-ravine-14266.herokuapp.com/login_register.php'>SIGN IN | REGISTER</a></li>";
 			}
 			?>
 		</ul>
@@ -25,15 +25,15 @@
 				$totalN = oci_result($parseC, "CCOUNT");
 
 				echo "<li>";
-				echo " <a href='http://localhost/Team6/customer/customer_notification.php'>Notifications  (" . $totalN . " new) <span class='fa fa-bell'></span></a>";
+				echo " <a href='http://quiet-ravine-14266.herokuapp.com/customer/customer_notification.php'>Notifications  (" . $totalN . " new) <span class='fa fa-bell'></span></a>";
 				echo "</li>";
 				echo "<li>";
-				echo " <a href='http://localhost/Team6/customer/customer_profile.php'>Your Profile  <span class='fa fa-file-text'></span></a>";
+				echo " <a href='http://quiet-ravine-14266.herokuapp.com/customer/customer_profile.php'>Your Profile  <span class='fa fa-file-text'></span></a>";
 				echo "</li>";
-				echo "<li><a href='http://localhost/Team6/logout.php'>LOGOUT  <span class='fa fa-sign-out'></span></a></li>";
+				echo "<li><a href='http://quiet-ravine-14266.herokuapp.com/logout.php'>LOGOUT  <span class='fa fa-sign-out'></span></a></li>";
 			} else {
 				echo "<li>";
-				echo " <a href='http://localhost/Team6/admin/admin_login.php'>Are you an Admin?</a>";
+				echo " <a href='http://quiet-ravine-14266.herokuapp.com/admin/admin_login.php'>Are you an Admin?</a>";
 				echo "</li>";
 
 			}
@@ -52,7 +52,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="http://localhost/Team6/index.php"><img src="http://localhost/Team6/images/logo.png"></a>
+			<a class="navbar-brand" href="http://quiet-ravine-14266.herokuapp.com/index.php"><img src="http://quiet-ravine-14266.herokuapp.com/images/logo.png"></a>
 
 		</div>
 
@@ -60,27 +60,27 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li>
-					<a href="http://localhost/Team6/site/about.php">ABOUT</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/site/about.php">ABOUT</a>
 				</li>
 				<li class="dropdown">
-					<a href="http://localhost/Team6/site/floors.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">FLOORS<span class="caret"></span></a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/site/floors.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">FLOORS<span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
 						<li>
-							<a href="http://localhost/Team6/site/floors.php?floor=0">Ground Floor</a>
+							<a href="http://quiet-ravine-14266.herokuapp.com/site/floors.php?floor=0">Ground Floor</a>
 						</li>
 						<li>
-							<a href="http://localhost/Team6/site/floors.php?floor=1">First Floor</a>
+							<a href="http://quiet-ravine-14266.herokuapp.com/site/floors.php?floor=1">First Floor</a>
 						</li>
 						<li>
-							<a href="http://localhost/Team6/site/floors.php?floor=2">Second Floor</a>
+							<a href="http://quiet-ravine-14266.herokuapp.com/site/floors.php?floor=2">Second Floor</a>
 						</li>
 						<li>
-							<a href="http://localhost/Team6/site/floors.php?floor=3">Third Floor</a>
+							<a href="http://quiet-ravine-14266.herokuapp.com/site/floors.php?floor=3">Third Floor</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="http://localhost/Team6/site/shop.php">SHOP ALL</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/site/shop.php">SHOP ALL</a>
 				</li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PRODUCTS<span class="caret"></span></a>
@@ -91,7 +91,7 @@
 						oci_execute($parse_cat);
 						while ($row = oci_fetch_assoc($parse_cat)) {
 							echo "<li>";
-							echo "<a href='http://localhost/Team6/site/shop.php?id=" . $row['CATID'] . "&catName=" . $row['CATNAME'] . "'>" . $row['CATNAME'] . "</a>";
+							echo "<a href='http://quiet-ravine-14266.herokuapp.com/site/shop.php?id=" . $row['CATID'] . "&catName=" . $row['CATNAME'] . "'>" . $row['CATNAME'] . "</a>";
 							echo "</li>";
 						}
 						?>
@@ -99,7 +99,7 @@
 				</li>
 
 			</ul>
-			<form class="navbar-form navbar-right" method="post" action="http://localhost/Team6/site/search.php" >
+			<form class="navbar-form navbar-right" method="post" action="http://quiet-ravine-14266.herokuapp.com/site/search.php" >
 				<div class="input-group input-group-sm">
 					<input type="text" required name="txtKeyword" class="form-control search-inp" placeholder="Search">
 					<span class="input-group-btn">
@@ -121,10 +121,10 @@
 					<a href="https://www.pinterest.com/search/?q=bishalbazar"><span class="fa fa-pinterest-p"></a>
 				</li>
 				<li>
-					<a href="http://localhost/Team6/site/contact.php">CONTACT</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/site/contact.php">CONTACT</a>
 				</li>
 				<li>
-					<a href="http://localhost/Team6/site/time_slot.php">TIME SLOT</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/site/time_slot.php">TIME SLOT</a>
 				</li>
 			</ul>
 		</div><!-- /.navbar-collapse -->

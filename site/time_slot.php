@@ -17,7 +17,7 @@ include ($doc_root . '/Team6/connect.php');
 		<div class="container">
 			<ul class="breadcrumb">
 				<li>
-					<a href="http://localhost/Team6/index.php">Home</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/index.php">Home</a>
 				</li>
 				<li class="active">
 					Time Slot
@@ -28,7 +28,7 @@ include ($doc_root . '/Team6/connect.php');
 
 				<h3>Time Slot</h3>
 				<div class="col-md-5">
-					<img src="http://localhost/Team6/images/slot.jpg" class="img-responsive" />
+					<img src="http://quiet-ravine-14266.herokuapp.com/images/slot.jpg" class="img-responsive" />
 				</div>
 				<div class="col-md-5 col-md-offset-1">
 					<p>

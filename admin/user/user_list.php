@@ -43,22 +43,22 @@ oci_execute($parse);
 						$c++;
 						echo "<tr>";
 						echo "<td>" . $c . "</td>";
-						echo "<td><img class='img-responsive' style='max-height:100px;' src='http://localhost/Team6/images/users/" . $row['USERPIC'] . "' /></td>";
+						echo "<td><img class='img-responsive' style='max-height:100px;' src='http://quiet-ravine-14266.herokuapp.com/images/users/" . $row['USERPIC'] . "' /></td>";
 						echo "<td>" . $row['USERNAME'] . "</td>";
 						echo "<td>" . $row['USEREMAIL'] . "</td>";
 						echo "<td>" . $row['USERPASSWORD'] . "</td>";
 						echo "<td>" . $row['USERROLE'] . "</td>";
 						echo "<td>" . $row['USERSTATUS'] . "</td>";
-						echo "<td><a class='link' href='http://localhost/Team6/admin/user/user_edit.php?id=" . $row['USERID'] . "'>Edit</a></td>";
+						echo "<td><a class='link' href='http://quiet-ravine-14266.herokuapp.com/admin/user/user_edit.php?id=" . $row['USERID'] . "'>Edit</a></td>";
 						if ($row['USERSTATUS'] == "Deactivated") {
-							$url = "http://localhost/Team6/admin/user/user_reactivate.php?id=" . $row['USERID'];
+							$url = "http://quiet-ravine-14266.herokuapp.com/admin/user/user_reactivate.php?id=" . $row['USERID'];
 							$text = "Reactivate";
 						} else {
-							$url = "http://localhost/Team6/admin/user/user_deactivate.php?id=" . $row['USERID'];
+							$url = "http://quiet-ravine-14266.herokuapp.com/admin/user/user_deactivate.php?id=" . $row['USERID'];
 							$text = "Deactivate";
 						}
 						echo "<td><a class='link' href='" . $url . "'>" . $text . "</a></td>";
-						echo "<td><a onclick='return ConfirmDelete()' class='link' href='http://localhost/Team6/admin/user/user_delete.php?id=" . $row['USERID'] . "'>Delete</a></td>";
+						echo "<td><a onclick='return ConfirmDelete()' class='link' href='http://quiet-ravine-14266.herokuapp.com/admin/user/user_delete.php?id=" . $row['USERID'] . "'>Delete</a></td>";
 						echo "</tr>";
 					}
 					?>

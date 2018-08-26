@@ -69,10 +69,10 @@ if (isset($_SESSION['userid'])) {
 		<div class="container">
 			<ul class="breadcrumb">
 				<li>
-					<a href="http://localhost/Team6/index.php">Home</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/index.php">Home</a>
 				</li>
 				<li>
-					<a href="http://localhost/Team6/site/shop.php">Shop</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/site/shop.php">Shop</a>
 				</li>
 				<li class="active">
 					Product : <?php echo $prodName; ?>
@@ -107,7 +107,7 @@ if (isset($_SESSION['userid'])) {
 					<form action="" method="post">
 						<div class="form-group row">
 							<div class="col-md-3">
-								<a href="http://localhost/Team6/site/shop.php" class="btn btn-cart"><span class="fa fa-reply"></span> Continue Shopping</a>
+								<a href="http://quiet-ravine-14266.herokuapp.com/site/shop.php" class="btn btn-cart"><span class="fa fa-reply"></span> Continue Shopping</a>
 							</div>
 							<div class="col-md-offset-1 col-md-5">
 								<input type="number" placeholder="Enter Quantity" class="form-control" <?php echo $disable; ?> required name="numQuantity">
@@ -124,7 +124,7 @@ if (isset($_SESSION['userid'])) {
 
 				</div>
 				<div class="col-md-4 col-md-offset-1">
-					<img alt="" src="http://localhost/Team6/images/products/<?php echo $prodImg; ?>" class="img-responsive" />
+					<img alt="" src="http://quiet-ravine-14266.herokuapp.com/images/products/<?php echo $prodImg; ?>" class="img-responsive" />
 
 				</div>
 

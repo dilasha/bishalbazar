@@ -88,7 +88,7 @@ if (isset($_REQUEST['id'])) {
 							<label class="col-sm-2 control-label">Account Picture</label>
 							<div class="col-sm-10">
 								<input class="input-sm" name="imgPic" type="file" />
-								<img height="200" src="http://localhost/Team6/images/users/<?php echo $photo; ?>" />
+								<img height="200" src="http://quiet-ravine-14266.herokuapp.com/images/users/<?php echo $photo; ?>" />
 							</div>
 						</div>
 						<div class="form-group">

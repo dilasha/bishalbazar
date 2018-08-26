@@ -51,7 +51,7 @@ $role = '';
 						$c++;
 						echo "<tr>";
 						echo "<td>" . $c . "</td>";
-						echo "<td><img style='max-height:100px' class='img-responsive' src='http://localhost/Team6/images/users/" . $row['USERPIC'] . "' /></td>";
+						echo "<td><img style='max-height:100px' class='img-responsive' src='http://quiet-ravine-14266.herokuapp.com/images/users/" . $row['USERPIC'] . "' /></td>";
 						echo "<td>" . $row['USERNAME'] . "</td>";
 						echo "<td>" . $row['USEREMAIL'] . "</td>";
 						echo "<td>" . $row['USERPASSWORD'] . "</td>";

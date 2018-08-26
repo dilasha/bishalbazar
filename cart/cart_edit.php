@@ -10,7 +10,7 @@ include ($doc_root . '/Team6/connect.php');
 
 		if (!isset($_SESSION['user'])) {
 			echo "<script>alert('You do not have permission to acces this page.')</script>";
-			echo "<script>window.location='http://localhost/Team6/login_register.php'</script>";
+			echo "<script>window.location='http://quiet-ravine-14266.herokuapp.com/login_register.php'</script>";
 		}
 
 		$id = $_REQUEST['id'];
@@ -46,7 +46,7 @@ include ($doc_root . '/Team6/connect.php');
 		<div class="container">
 			<ul class="breadcrumb">
 				<li>
-					<a href="http://localhost/Team6/index.php">Home</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/index.php">Home</a>
 				</li>
 				<li class="active">
 					Profile
@@ -77,7 +77,7 @@ include ($doc_root . '/Team6/connect.php');
 					<form action="" method="post">
 						<div class="form-group row">
 							<div class="col-md-3">
-								<a href="http://localhost/Team6/site/shop.php" class="btn btn-cart"><span class="fa fa-reply"></span> Continue Shopping</a>
+								<a href="http://quiet-ravine-14266.herokuapp.com/site/shop.php" class="btn btn-cart"><span class="fa fa-reply"></span> Continue Shopping</a>
 							</div>
 							<div class="col-md-offset-1 col-md-5">
 							<?php
@@ -101,7 +101,7 @@ include ($doc_root . '/Team6/connect.php');
 
 				</div>
 				<div class="col-md-4 col-md-offset-1">
-					<img alt="" src="http://localhost/Team6/images/products/<?php echo $prodImg; ?>" class="
+					<img alt="" src="http://quiet-ravine-14266.herokuapp.com/images/products/<?php echo $prodImg; ?>" class="
 					img-responsive" />
 
 				</div>

@@ -71,7 +71,7 @@ if (isset($_POST['btnEditShop'])) {
 						<label class="col-sm-2 control-label">Shop Banner</label>
 						<div class="col-sm-10">
 							<input name="imgShopBanner" placeholder="Shop Banner" type="file" class="input-sm">
-							<img src="http://localhost/Team6/images/shops/<?php echo $editShopBanner; ?>" />
+							<img src="http://quiet-ravine-14266.herokuapp.com/images/shops/<?php echo $editShopBanner; ?>" />
 						</div>
 					</div>
 					<div class="form-group">

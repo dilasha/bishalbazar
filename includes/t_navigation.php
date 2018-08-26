@@ -1,6 +1,6 @@
 <header>
 	<div class="logo">
-		<a href="http://localhost/Team6/trader/trad_dash.php"><img src="http://localhost/Team6/images/logo.png" title="Magnetic" alt="Magnetic"/></a>
+		<a href="http://quiet-ravine-14266.herokuapp.com/trader/trad_dash.php"><img src="http://quiet-ravine-14266.herokuapp.com/images/logo.png" title="Magnetic" alt="Magnetic"/></a>
 	</div><!-- end logo -->
 
 	<div id="menu_icon">
@@ -11,19 +11,19 @@
 		<ul>
 			
 			<li>
-				<a href="http://localhost/Team6/trader/trad_dash.php">Dashboard</a>
+				<a href="http://quiet-ravine-14266.herokuapp.com/trader/trad_dash.php">Dashboard</a>
 			</li>
 			<li>
-				<a href="http://localhost/Team6/shop/shop_list.php">Shop List</a>
+				<a href="http://quiet-ravine-14266.herokuapp.com/shop/shop_list.php">Shop List</a>
 			</li>
 			<li>
-				<a href="http://localhost/Team6/shop/shop_add.php">Add Shop</a>
+				<a href="http://quiet-ravine-14266.herokuapp.com/shop/shop_add.php">Add Shop</a>
 			</li>
 			<li>
-				<a href="http://localhost/Team6/product/product_list.php">Product List</a>
+				<a href="http://quiet-ravine-14266.herokuapp.com/product/product_list.php">Product List</a>
 			</li>
 			<li>
-				<a href="http://localhost/Team6/product/product_add.php">Add Products</a>
+				<a href="http://quiet-ravine-14266.herokuapp.com/product/product_add.php">Add Products</a>
 			</li>
 		</ul>
 	</nav><!-- end navigation menu -->
@@ -58,14 +58,14 @@
 			<li>
 				<?php
 				if (isset($_SESSION['user'])) {
-					echo "<a href='http://localhost/Team6/trader/trader_profile.php'> " . $_SESSION['user'] . "'s Profile  <span class='fa fa-file-text'></span> </a>";
+					echo "<a href='http://quiet-ravine-14266.herokuapp.com/trader/trader_profile.php'> " . $_SESSION['user'] . "'s Profile  <span class='fa fa-file-text'></span> </a>";
 			$query_notif = "SELECT COUNT(msgID) AS NCOUNT  FROM message m, user_account u where m.msgReciever=u.userID and u.userID=" . $_SESSION['userid'] . "";
 			$parse_notif = oci_parse($connection, $query_notif);
 			oci_execute($parse_notif);
 			oci_fetch($parse_notif);
 			$tNotif = oci_result($parse_notif, "NCOUNT");
 
-			echo "<li><a href='http://localhost/Team6/trader/trader_notification.php'>Notifications (".$tNotif." new) <span class='fa fa-bell'></span></a></li>";
+			echo "<li><a href='http://quiet-ravine-14266.herokuapp.com/trader/trader_notification.php'>Notifications (".$tNotif." new) <span class='fa fa-bell'></span></a></li>";
 			
 				}
 				?>
@@ -76,7 +76,7 @@
 			<?php
 			if (isset($_SESSION['user'])) {
 
-				echo "<li class='pull-right'><a href='http://localhost/Team6/logout.php'>LOGOUT  <span class='fa fa-sign-out'></span></a></li>";
+				echo "<li class='pull-right'><a href='http://quiet-ravine-14266.herokuapp.com/logout.php'>LOGOUT  <span class='fa fa-sign-out'></span></a></li>";
 			
 			
 			}

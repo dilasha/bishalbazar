@@ -5,7 +5,7 @@ include ($doc_root . '/Team6/includes/head.php');
 
 if (!isset($_SESSION['user'])) {
 	echo "<script>alert('You do not have permission to acces this page.')</script>";
-	echo "<script>window.location='http://localhost/Team6/login_register.php'</script>";
+	echo "<script>window.location='http://quiet-ravine-14266.herokuapp.com/login_register.php'</script>";
 } else {
 	$uID = $_SESSION['userid'];
 	$query = "select p.prodID, c.custID, p.prodName, p.prodRate, c.quantity from c_order c, user_account u, product p, shop s
@@ -19,7 +19,7 @@ where c.prodID=p.prodID and s.shopID=p.shopID and c.shopID=s.shopID and u.userID
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="http://localhost/Team6/css/carousel.css" /></head>
+		<link rel="stylesheet" type="text/css" href="http://quiet-ravine-14266.herokuapp.com/css/carousel.css" /></head>
 
 	<body>
 		<?php
@@ -28,7 +28,7 @@ where c.prodID=p.prodID and s.shopID=p.shopID and c.shopID=s.shopID and u.userID
 		<div class="container">
 			<ul class="breadcrumb">
 				<li>
-					<a href="http://localhost/Team6/index.php">Home</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/index.php">Home</a>
 				</li>
 				<li class="active">
 					Cart
@@ -76,7 +76,7 @@ where c.prodID=p.prodID and s.shopID=p.shopID and c.shopID=s.shopID and u.userID
 							<th><?php echo "$" . $total; ?></th>
 						</tfoot>
 					</table>
-					<a class="btn btn-cart" href='http://localhost/Team6/cart/cart_list.php'><span class="fa fa-reply"></span>  Back To Cart</a>
+					<a class="btn btn-cart" href='http://quiet-ravine-14266.herokuapp.com/cart/cart_list.php'><span class="fa fa-reply"></span>  Back To Cart</a>
 					<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" name="_xclick">
 							<input type="hidden" name="cmd" value="_cart" />
 							<input type="hidden" name="upload" value="1" />
@@ -95,9 +95,9 @@ where c.prodID=p.prodID and s.shopID=p.shopID and c.shopID=s.shopID and u.userID
 							}
 							 ?>
 							<input type="hidden" name="custom" value="<?php echo $_SESSION['userid']; ?>" />
-							<input type="hidden" name="return" value= "http://localhost/Team6/cart/paypal_return.php" />
-							<input type="hidden" name="cancel_return" value="http://localhost/Team6/cart/paypal_cancel.php" />
-							<input class="pull-right" type="image" alt="Make payments with PayPal - it's fast, free and secure!" name="submit" src="http://localhost/Team6/images/paypal.jpg" />
+							<input type="hidden" name="return" value= "http://quiet-ravine-14266.herokuapp.com/cart/paypal_return.php" />
+							<input type="hidden" name="cancel_return" value="http://quiet-ravine-14266.herokuapp.com/cart/paypal_cancel.php" />
+							<input class="pull-right" type="image" alt="Make payments with PayPal - it's fast, free and secure!" name="submit" src="http://quiet-ravine-14266.herokuapp.com/images/paypal.jpg" />
 						</form>
 				</div>				
 			</div>
@@ -121,13 +121,13 @@ where c.prodID=p.prodID and s.shopID=p.shopID and c.shopID=s.shopID and u.userID
 									echo "<div class='col-xs-12 col-sm-6 col-md-3'>";
 									echo "<table>";
 									echo "<tr>";
-									echo "<td height='200' colspan='2'><a class='fill' style='height=200px;'  href='http://localhost/Team6/site/product_view.php?id=" . $row_c['PRODID'] . "' >";
-									echo "<img style='max-height:200px;'  class='prod-img img-responsive' src='http://localhost/Team6/images/products/" . $row_c['PRODIMG'] . "' /></td></a>";
+									echo "<td height='200' colspan='2'><a class='fill' style='height=200px;'  href='http://quiet-ravine-14266.herokuapp.com/site/product_view.php?id=" . $row_c['PRODID'] . "' >";
+									echo "<img style='max-height:200px;'  class='prod-img img-responsive' src='http://quiet-ravine-14266.herokuapp.com/images/products/" . $row_c['PRODIMG'] . "' /></td></a>";
 									echo "</tr>";
 									echo "<tr>";
-									echo "<td class='prod-title'><a href='http://localhost/Team6/site/product_view.php?id=" . $row_c['PRODID'] . "' >" . $row_c['PRODNAME'] . " </a></td>";
+									echo "<td class='prod-title'><a href='http://quiet-ravine-14266.herokuapp.com/site/product_view.php?id=" . $row_c['PRODID'] . "' >" . $row_c['PRODNAME'] . " </a></td>";
 									echo "<td rowspan='2'>";
-									echo "<a href='http://localhost/Team6/site/product_view.php?id=" . $row_c['PRODID'] . "' class='btn btn-cart pull-right'>";
+									echo "<a href='http://quiet-ravine-14266.herokuapp.com/site/product_view.php?id=" . $row_c['PRODID'] . "' class='btn btn-cart pull-right'>";
 									echo "<span class='fa fa-eye'> </span>";
 									echo "  View Details";
 									echo "</a></td>";

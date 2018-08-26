@@ -111,7 +111,7 @@ oci_execute($parse);
 		<div class="container">
 			<ul class="breadcrumb">
 				<li>
-					<a href="http://localhost/Team6/index.php">Home</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/index.php">Home</a>
 				</li>
 				<li class="active">
 					<?php
@@ -183,13 +183,13 @@ oci_execute($parse);
 							echo "<div class='col-md-4'>";
 							echo "<table>";
 							echo "<tr>";
-							echo "<td colspan='2'><a href='http://localhost/Team6/site/product_view.php?id=" . $row['PRODID'] . "' >";
-							echo "<div class='fill'><img class='img-responsive prod-img' src='http://localhost/Team6/images/products/" . $row['PRODIMG'] . "' /></div></a></td>";
+							echo "<td colspan='2'><a href='http://quiet-ravine-14266.herokuapp.com/site/product_view.php?id=" . $row['PRODID'] . "' >";
+							echo "<div class='fill'><img class='img-responsive prod-img' src='http://quiet-ravine-14266.herokuapp.com/images/products/" . $row['PRODIMG'] . "' /></div></a></td>";
 							echo "</tr>";
 							echo "<tr>";
-							echo "<td class='prod-title'><a href='http://localhost/Team6/site/product_view.php?id=" . $row['PRODID'] . "' >" . $row['PRODNAME'] . " </a></td>";
+							echo "<td class='prod-title'><a href='http://quiet-ravine-14266.herokuapp.com/site/product_view.php?id=" . $row['PRODID'] . "' >" . $row['PRODNAME'] . " </a></td>";
 							echo "<td rowspan='2'>";
-							echo "<a href='http://localhost/Team6/site/product_view.php?id=" . $row['PRODID'] . "' class='btn btn-cart pull-right'>";
+							echo "<a href='http://quiet-ravine-14266.herokuapp.com/site/product_view.php?id=" . $row['PRODID'] . "' class='btn btn-cart pull-right'>";
 							echo "<span class='fa fa-eye'> </span>";
 							echo "  View Details";
 							echo "</a></td>";

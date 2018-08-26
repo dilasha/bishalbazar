@@ -30,7 +30,7 @@ if (!isset($_SESSION['user'])) {
 <script type="text/javascript" src="http://quiet-ravine-14266.herokuapp.com/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="http://quiet-ravine-14266.herokuapp.com/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://quiet-ravine-14266.herokuapp.com/js/sweetalert.min.js"></script>
-<script type="text/javascript" src="http://localhost/Team6/slider/PgwSlider-master/pgwslider.min.js"></script>
+<script type="text/javascript" src="http://quiet-ravine-14266.herokuapp.com/slider/PgwSlider-master/pgwslider.min.js"></script>
 
 <script type="text/javascript" src="http://quiet-ravine-14266.herokuapp.com/js/jquery.js"></script>
 <script type="text/javascript" src="http://quiet-ravine-14266.herokuapp.com/js/main.js"></script>

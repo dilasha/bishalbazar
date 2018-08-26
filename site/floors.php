@@ -16,7 +16,7 @@ if (isset($_REQUEST['floor'])) {
 	$parse = oci_parse($connection, $query);
 	oci_execute($parse);
 } else {
-	$url = "http://localhost/Team6/index.php";
+	$url = "http://quiet-ravine-14266.herokuapp.com/index.php";
 	echo "<script>window.location='" . $url . "';</script>";
 }
 ?>
@@ -35,7 +35,7 @@ if (isset($_REQUEST['floor'])) {
 		<div class="container">
 			<ul class="breadcrumb">
 				<li>
-					<a href="http://localhost/Team6/index.php">Home</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/index.php">Home</a>
 				</li>
 				<li class="active">
 					Floor : <?php echo $floorname; ?>
@@ -47,7 +47,7 @@ if (isset($_REQUEST['floor'])) {
 				while ($row = oci_fetch_assoc($parse)) {
 					echo "<div class='col-md-6 shop-div'><table class='shop-table'>";
 					echo "<tr><td class='prod-title'><a href='#'>".$row['SHOPNAME']."</a></td></tr>";
-					echo "<tr><td height='150' class='prod-img fill'><a href='http://localhost/Team6/site/shop.php?shopid=".$row['SHOPID']."&shopname=".$row['SHOPNAME']."'><img class='img-responsive' src='http://localhost/Team6/images/shops/".$row['SHOPIMG']."'></a></td></tr>";
+					echo "<tr><td height='150' class='prod-img fill'><a href='http://quiet-ravine-14266.herokuapp.com/site/shop.php?shopid=".$row['SHOPID']."&shopname=".$row['SHOPNAME']."'><img class='img-responsive' src='http://quiet-ravine-14266.herokuapp.com/images/shops/".$row['SHOPIMG']."'></a></td></tr>";
 					echo "</table></div>";
 				}
 				?>		

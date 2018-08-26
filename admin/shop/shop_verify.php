@@ -48,7 +48,7 @@ $doc_root = $_SERVER['DOCUMENT_ROOT'];
 							echo "<tr>";
 							echo "<td>" . $c . "</td>";
 							echo "<td>" . $row['SHOPNAME'] . "</td>";
-							echo "<td><img class='responsive' style='max-height:100px;' src='http://localhost/Team6/images/shops/" . $row['SHOPIMG'] . "'</td>";
+							echo "<td><img class='responsive' style='max-height:100px;' src='http://quiet-ravine-14266.herokuapp.com/images/shops/" . $row['SHOPIMG'] . "'</td>";
 							echo "<td>" . $row['FLOORNUM'] . "</td>";
 							echo "<td>" . $row['SHOPSTATUS'] . "</td>";
 							echo "<td><a class='btn btn-success' href='shop_confirm.php?id=" . $row['SHOPID'] . "&owner=".$row['USERID']."'>Verify  <span class='fa fa-check-square'></span></a></td>";

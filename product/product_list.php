@@ -61,7 +61,7 @@ include ($doc_root . '/Team6/includes/t_head.php');
 								echo "<td>" . $rowCat['CATNAME'] . "</td>";
 							}
 							echo "<td>" . $row['PRODNAME'] . "</td>";
-							echo "<td><img height='150' src='http://localhost/Team6/images/products/" . $row['PRODIMG'] . "' /></td>";
+							echo "<td><img height='150' src='http://quiet-ravine-14266.herokuapp.com/images/products/" . $row['PRODIMG'] . "' /></td>";
 							echo "<td> $" . $row['PRODRATE'] . "</td>";
 							echo "<td>" . $row['PRODFEAT'] . "</td>";
 							echo "<td><a class='link' href='product_edit.php?id=" . $row['PRODID'] . "'>Edit</a></td>";

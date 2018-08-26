@@ -31,7 +31,7 @@ while ($row = oci_fetch_assoc($parse)) {
 			<h2>My Profile</h2>
 
 			<div class="col-md-4">
-				<img class="img-responsive" src="http://localhost/Team6/images/users/<?php echo $photo; ?>" />
+				<img class="img-responsive" src="http://quiet-ravine-14266.herokuapp.com/images/users/<?php echo $photo; ?>" />
 			</div>
 			<div class="col-md-offset-1 col-md-5">
 				<a href="admin_edit.php?id=<?php echo $id; ?>" class="btn btn-default pull-right">Edit Profile</a>

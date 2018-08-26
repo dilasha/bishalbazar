@@ -5,7 +5,7 @@ include ($doc_root . '/Team6/includes/head.php');
 
 if (!isset($_SESSION['user'])) {
 	echo "<script>alert('You do not have permission to acces this page.')</script>";
-	echo "<script>window.location='http://localhost/Team6/login_register.php'</script>";
+	echo "<script>window.location='http://quiet-ravine-14266.herokuapp.com/login_register.php'</script>";
 }
 //user id
 if ($_GET['cm'])

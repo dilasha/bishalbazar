@@ -45,7 +45,7 @@ oci_execute($parse);
 							echo "<td>" . $c . "</td>";
 							echo "<td>" . $row['SLIDERTITLE'] . "</td>";
 							echo "<td>" . $row['SLIDERDESC'] . "</td>";
-							echo "<td><img  class='img-responsive' style='max-height:100px;' src='http://localhost/Team6/images/sliders/" . $row['SLIDERIMG'] . "'></td>";
+							echo "<td><img  class='img-responsive' style='max-height:100px;' src='http://quiet-ravine-14266.herokuapp.com/images/sliders/" . $row['SLIDERIMG'] . "'></td>";
 							echo "<td>" . $row['SLIDERLINK'] . "</td>";
 							echo "<td><a class='link' href='slider_edit.php?id=" . $row['SLIDERID'] . "'>Edit</a></td>";
 							echo "<td><a onclick='return ConfirmDelete()' class='link' href='slider_delete.php?id=" . $row['SLIDERID'] . "'>Delete</a></td>";

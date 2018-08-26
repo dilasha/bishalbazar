@@ -5,7 +5,7 @@ include ($doc_root . '/Team6/includes/head.php');
 
 if (!isset($_SESSION['user'])) {
 	echo "<script>alert('You do not have permission to acces this page.')</script>";
-	echo "<script>window.location='http://localhost/Team6/login_register.php'</script>";
+	echo "<script>window.location='http://quiet-ravine-14266.herokuapp.com/login_register.php'</script>";
 }
 $uID = $_SESSION['userid'];
 $id = $_REQUEST['id'];
@@ -29,10 +29,10 @@ while ($row = oci_fetch_assoc($parse)) {
 		<div class="container">
 			<ul class="breadcrumb">
 				<li>
-					<a href="http://localhost/Team6/index.php">Home</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/index.php">Home</a>
 				</li>
 				<li>
-					<a href="http://localhost/Team6/cart/cart_list.php">Cart</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/cart/cart_list.php">Cart</a>
 				</li>
 				<li class="active">
 					Payment Success

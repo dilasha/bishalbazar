@@ -135,7 +135,7 @@ if (isset($_POST['btnProdEdit'])) {
 						<label class="col-sm-2 control-label">Product Photo</label>
 						<div class="col-sm-10">
 							<input name="imgProd" placeholder="Product Photo" type="file" class="input-sm">
-							<img src="http://localhost/Team6/images/products/<?php echo $eProdImg ?>"/>
+							<img src="http://quiet-ravine-14266.herokuapp.com/images/products/<?php echo $eProdImg ?>"/>
 						</div>
 					</div>
 					<div class="form-group">

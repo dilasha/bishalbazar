@@ -5,7 +5,7 @@ include ($doc_root . '/Team6/includes/head.php');
 
 if (!isset($_SESSION['user'])) {
 	echo "<script>alert('You do not have permission to acces this page.')</script>";
-	echo "<script>window.location='http://localhost/Team6/login_register.php'</script>";
+	echo "<script>window.location='http://quiet-ravine-14266.herokuapp.com/login_register.php'</script>";
 }
 
 $uID = $_SESSION['userid'];
@@ -39,7 +39,7 @@ $c = 0;
 		<div class="container">
 			<ul class="breadcrumb">
 				<li>
-					<a href="http://localhost/Team6/index.php">Home</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/index.php">Home</a>
 				</li>
 				<li class="active">
 					Cart
@@ -68,13 +68,13 @@ $c = 0;
 						echo "<td>" . $row['USERNAME'] . "</td>";
 						echo "<td>" . $row['SHOPNAME'] . "</td>";
 						echo "<td>" . $row['PRODNAME'] . "</td>";
-						echo "<td><img height='120' src='http://localhost/Team6/images/products/" . $row['PRODIMG'] . "' /></td>";
+						echo "<td><img height='120' src='http://quiet-ravine-14266.herokuapp.com/images/products/" . $row['PRODIMG'] . "' /></td>";
 						echo "<td>$" . $row['PRODRATE'] . "</td>";
 						echo "<td>" . $row['QUANTITY'] . "</td>";
 						$amount = $row['PRODRATE'] * $row['QUANTITY'];
 						echo "<td>Rs. " . $amount . "</td>";
-						echo "<td><a href='http://localhost/Team6/cart/cart_edit.php?id=" . $row['PRODID'] . "'>Edit</a></td>";
-						echo "<td><a onclick='return ConfirmDelete()' href='http://localhost/Team6/cart/cart_delete.php?id=" . $row['PRODID'] . "'>Delete</a></td>";
+						echo "<td><a href='http://quiet-ravine-14266.herokuapp.com/cart/cart_edit.php?id=" . $row['PRODID'] . "'>Edit</a></td>";
+						echo "<td><a onclick='return ConfirmDelete()' href='http://quiet-ravine-14266.herokuapp.com/cart/cart_delete.php?id=" . $row['PRODID'] . "'>Delete</a></td>";
 						echo "</tr>";
 						$total += $amount;
 					}
@@ -88,7 +88,7 @@ $c = 0;
 				</table>
 				</div>
 				<div class="pull-right">
-					<a href="http://localhost/Team6/site/shop.php" class="btn btn-cart"><span class="fa fa-reply"></span>  Back to Shopping</a>
+					<a href="http://quiet-ravine-14266.herokuapp.com/site/shop.php" class="btn btn-cart"><span class="fa fa-reply"></span>  Back to Shopping</a>
 					<?php
 					if ($total != 0) {
 						echo "<a onclick='return ConfirmReset()' href='cart_reset.php?id=$uID' class='btn btn-cart'><span class='fa fa-refresh'></span>  Reset Cart</a>";

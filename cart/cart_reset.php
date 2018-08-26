@@ -7,6 +7,6 @@ if (isset($_REQUEST['id'])) {
 	$query = "DELETE FROM c_order WHERE custID=$id";
 	$parse = oci_parse($connection, $query);
 	oci_execute($parse);
-	echo "<script>window.location='http://localhost/Team6/cart/cart_list.php'</script>";
+	echo "<script>window.location='http://quiet-ravine-14266.herokuapp.com/cart/cart_list.php'</script>";
 }
 ?>

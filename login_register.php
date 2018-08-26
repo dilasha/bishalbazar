@@ -30,11 +30,11 @@ if (isset($_POST['btnLog'])) {
 			$_SESSION['user'] = $uName;
 			$_SESSION['role'] = $rdoLogRole;
 			$_SESSION['userid'] = $uID;
-			$url = "http://localhost/Team6/index.php";
+			$url = "http://quiet-ravine-14266.herokuapp.com/index.php";
 			if ($rdoLogRole == "Customer") {
-				$url = "http://localhost/Team6/index.php";
+				$url = "http://quiet-ravine-14266.herokuapp.com/index.php";
 			} else if ($rdoLogRole == "Trader") {
-				$url = "http://localhost/Team6/trader/trad_dash.php";
+				$url = "http://quiet-ravine-14266.herokuapp.com/trader/trad_dash.php";
 			}
 			echo "<script>window.location='" . $url . "';</script>";
 		} else {
@@ -139,7 +139,7 @@ if (isset($_POST['btnReg'])) {
 			<div class="content">
 				<ul class="breadcrumb">
 					<li>
-						<a href="http://localhost/Team6/index.php">Home</a>
+						<a href="http://quiet-ravine-14266.herokuapp.com/index.php">Home</a>
 					</li>
 					<li class="active">
 						Sign in | Register
