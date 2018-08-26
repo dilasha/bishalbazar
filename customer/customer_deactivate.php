@@ -1,6 +1,6 @@
 <?php
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
-include ($doc_root . '/Team6/includes/head.php');
+include ($doc_root . '/includes/head.php');
 if (isset($_REQUEST['id'])) {
 	$id = $_REQUEST['id'];
 	$query = "UPDATE user_account SET userStatus='Deactivated' where userID=$id";

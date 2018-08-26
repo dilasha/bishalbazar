@@ -6,7 +6,7 @@ include ($doc_root . '/Team6/connect.php');
 <html>
 	<head>
 		<?php
-		include ($doc_root . '/Team6/includes/head.php');
+		include ($doc_root . '/includes/head.php');
 
 		if (!isset($_SESSION['user'])) {
 			echo "<script>alert('You do not have permission to acces this page.')</script>";
@@ -41,7 +41,7 @@ include ($doc_root . '/Team6/connect.php');
 
 	<body>
 		<?php
-		include ($doc_root . '/Team6/includes/navigation.php');
+		include ($doc_root . '/includes/navigation.php');
 		?>
 		<div class="container">
 			<ul class="breadcrumb">
@@ -109,7 +109,7 @@ include ($doc_root . '/Team6/connect.php');
 			</div>
 		</div>
 		<?php
-		include ($doc_root . '/Team6/includes/footer.php');
+		include ($doc_root . '/includes/footer.php');
 		?>
 	</body>
 

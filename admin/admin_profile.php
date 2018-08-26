@@ -1,6 +1,6 @@
 <?php
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
-include ($doc_root . '/Team6/includes/a_head.php');
+include ($doc_root . '/includes/a_head.php');
 $id = $_SESSION['userid'];
 $query = "SELECT * FROM user_account WHERE userID=$id";
 $parse = oci_parse($connection, $query);
@@ -25,7 +25,7 @@ while ($row = oci_fetch_assoc($parse)) {
 	<body>
 
 		<?php
-		include ($doc_root . '/Team6/includes/a_navigation.php');
+		include ($doc_root . '/includes/a_navigation.php');
 		?>
 		<div class="content row">
 			<h2>My Profile</h2>

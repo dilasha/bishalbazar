@@ -1,7 +1,7 @@
 <?php
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
 include ($doc_root . '/Team6/connect.php');
-include ($doc_root . '/Team6/includes/head.php');
+include ($doc_root . '/includes/head.php');
 $errormsg = "";
 $regmsg = "";
 
@@ -132,7 +132,7 @@ if (isset($_POST['btnReg'])) {
 
 	<body>
 		<?php
-		include ($doc_root . '/Team6/includes/navigation.php');
+		include ($doc_root . '/includes/navigation.php');
 		?>
 		<div class="container">
 
@@ -264,7 +264,7 @@ if (isset($_POST['btnReg'])) {
 
 		</div>
 		<?php
-		include ($doc_root . '/Team6/includes/footer.php');
+		include ($doc_root . '/includes/footer.php');
 		?>
 	</body>
 

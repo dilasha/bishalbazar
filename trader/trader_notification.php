@@ -1,6 +1,6 @@
 <?php
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
-include ($doc_root . '/Team6/includes/t_head.php');
+include ($doc_root . '/includes/t_head.php');
 $query = "SELECT * FROM message m, user_account u where m.msgReciever=u.userID and u.userID=" . $_SESSION['userid'] . "";
 $parse = oci_parse($connection, $query);
 oci_execute($parse);
@@ -12,7 +12,7 @@ oci_execute($parse);
 	<body>
 
 		<?php
-		include ($doc_root . '/Team6/includes/t_navigation.php');
+		include ($doc_root . '/includes/t_navigation.php');
 		?>
 		<div class="content row">
 			<h2>View Messages</h2>

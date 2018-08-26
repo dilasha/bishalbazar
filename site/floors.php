@@ -24,13 +24,13 @@ if (isset($_REQUEST['floor'])) {
 <html>
 	<head>
 		<?php
-		include ($doc_root . '/Team6/includes/head.php');
+		include ($doc_root . '/includes/head.php');
 		?>
 	</head>
 
 	<body>
 		<?php
-		include ($doc_root . '/Team6/includes/navigation.php');
+		include ($doc_root . '/includes/navigation.php');
 		?>
 		<div class="container">
 			<ul class="breadcrumb">
@@ -55,7 +55,7 @@ if (isset($_REQUEST['floor'])) {
 			</div>
 		</div>
 		<?php
-		include ($doc_root . '/Team6/includes/footer.php');
+		include ($doc_root . '/includes/footer.php');
 		?>
 	</body>
 

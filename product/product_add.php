@@ -1,6 +1,6 @@
 <?php
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
-include ($doc_root . '/Team6/includes/t_head.php');
+include ($doc_root . '/includes/t_head.php');
 
 $added = "";
 if (isset($_POST['btnProdAdd'])) {
@@ -50,7 +50,7 @@ if (isset($_POST['btnProdAdd'])) {
 	<head></head>
 	<body>
 		<?php
-		include ($doc_root . '/Team6/includes/t_navigation.php');
+		include ($doc_root . '/includes/t_navigation.php');
 		?>
 		<div class="content">
 			<h2>Product Add</h2>

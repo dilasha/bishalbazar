@@ -1,6 +1,6 @@
 <?php
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
-include ($doc_root . '/Team6/includes/a_head.php');
+include ($doc_root . '/includes/a_head.php');
 $query = "SELECT * FROM user_account where userStatus!='Unverified'";
 $parse = oci_parse($connection, $query);
 oci_execute($parse);
@@ -19,7 +19,7 @@ oci_execute($parse);
 	<body>
 
 		<?php
-		include ($doc_root . '/Team6/includes/a_navigation.php');
+		include ($doc_root . '/includes/a_navigation.php');
 		?>
 		<div class="content row">
 			<h2>User List</h2>

@@ -1,7 +1,7 @@
 <?php
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
 include ($doc_root . '/Team6/connect.php');
-include ($doc_root . '/Team6/includes/head.php');
+include ($doc_root . '/includes/head.php');
 
 if (!isset($_SESSION['user'])) {
 	echo "<script>alert('You do not have permission to acces this page.')</script>";
@@ -24,7 +24,7 @@ while ($row = oci_fetch_assoc($parse)) {
 
 	<body>
 		<?php
-		include ($doc_root . '/Team6/includes/navigation.php');
+		include ($doc_root . '/includes/navigation.php');
 		?>
 		<div class="container">
 			<ul class="breadcrumb">
@@ -47,7 +47,7 @@ while ($row = oci_fetch_assoc($parse)) {
 			</div>
 		</div>
 		<?php
-		include ($doc_root . '/Team6/includes/footer.php');
+		include ($doc_root . '/includes/footer.php');
 		?>
 	</body>
 

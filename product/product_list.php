@@ -1,6 +1,6 @@
 <?php
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
-include ($doc_root . '/Team6/includes/t_head.php');
+include ($doc_root . '/includes/t_head.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,7 +17,7 @@ include ($doc_root . '/Team6/includes/t_head.php');
 	<body>
 
 		<?php
-		include ($doc_root . '/Team6/includes/t_navigation.php');
+		include ($doc_root . '/includes/t_navigation.php');
 		?>
 		<div class="content row">
 			<h2>Product List</h2>

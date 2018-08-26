@@ -1,6 +1,6 @@
 <?php
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
-include ($doc_root . '/Team6/includes/head.php');
+include ($doc_root . '/includes/head.php');
 $errormsg = "";
 if (isset($_POST['btnAdminLog'])) {
 	$adminEmail = $_POST['adminEmail'];

@@ -1,6 +1,6 @@
 <?php
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
-include ($doc_root . '/Team6/includes/a_head.php');
+include ($doc_root . '/includes/a_head.php');
 $entrymsg = "";
 if (isset($_POST['btnAddSlider'])) {
 	$sliderName = $_POST['txtSliderName'];
@@ -40,7 +40,7 @@ if (isset($_POST['btnAddSlider'])) {
 	<head></head>
 	<body>
 		<?php
-		include ($doc_root . '/Team6/includes/a_navigation.php');
+		include ($doc_root . '/includes/a_navigation.php');
 		?>
 		<div class="content row">
 			<div class="col-md-10">

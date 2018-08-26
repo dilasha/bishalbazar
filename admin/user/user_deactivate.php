@@ -1,6 +1,6 @@
 <?php
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
-include ($doc_root . '/Team6/includes/a_head.php');
+include ($doc_root . '/includes/a_head.php');
 
 if (isset($_REQUEST['id'])) {
 	$id = $_REQUEST['id'];

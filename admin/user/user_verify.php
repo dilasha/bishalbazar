@@ -1,6 +1,6 @@
 <?php
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
-include ($doc_root . '/Team6/includes/a_head.php');
+include ($doc_root . '/includes/a_head.php');
 $role = '';
 ?>
 <!DOCTYPE html>
@@ -18,7 +18,7 @@ $role = '';
 	<body>
 
 		<?php
-		include ($doc_root . '/Team6/includes/a_navigation.php');
+		include ($doc_root . '/includes/a_navigation.php');
 		?>
 		<div class="content row">
 			<h2>User Verification : <?php echo $role; ?></h2>

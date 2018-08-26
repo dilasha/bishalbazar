@@ -1,7 +1,7 @@
 <?php
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
 include ($doc_root . '/Team6/connect.php');
-include ($doc_root . '/Team6/includes/head.php');
+include ($doc_root . '/includes/head.php');
 $condition = "";
 $title = "";
 if (isset($_REQUEST['id'])) {
@@ -106,7 +106,7 @@ oci_execute($parse);
 
 	<body>
 		<?php
-		include ($doc_root . '/Team6/includes/navigation.php');
+		include ($doc_root . '/includes/navigation.php');
 		?>
 		<div class="container">
 			<ul class="breadcrumb">
@@ -209,7 +209,7 @@ oci_execute($parse);
 			</div>
 		</div>
 		<?php
-		include ($doc_root . '/Team6/includes/footer.php');
+		include ($doc_root . '/includes/footer.php');
 		?>
 	</body>
 

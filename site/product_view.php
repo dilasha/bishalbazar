@@ -1,7 +1,7 @@
 <?php
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
 include ($doc_root . '/Team6/connect.php');
-include ($doc_root . '/Team6/includes/head.php');
+include ($doc_root . '/includes/head.php');
 
 $id = $_REQUEST['id'];
 $query = "SELECT * FROM user_account u, category c, shop s, product p where p.prodID=$id and p.prodCategory=c.catID and s.shopID=p.shopID and s.userID=u.userID";
@@ -64,7 +64,7 @@ if (isset($_SESSION['userid'])) {
 
 	<body>
 		<?php
-		include ($doc_root . '/Team6/includes/navigation.php');
+		include ($doc_root . '/includes/navigation.php');
 		?>
 		<div class="container">
 			<ul class="breadcrumb">
@@ -131,7 +131,7 @@ if (isset($_SESSION['userid'])) {
 			</div>
 		</div>
 		<?php
-		include ($doc_root . '/Team6/includes/footer.php');
+		include ($doc_root . '/includes/footer.php');
 		?>
 	</body>
 

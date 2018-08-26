@@ -37,5 +37,5 @@ if (!isset($_SESSION['user'])) {
 <script type="text/javascript" src="http://quiet-ravine-14266.herokuapp.com/js/main.js"></script>
 
 <?php
-include ($doc_root . '/Team6/includes/send_function.php');
+include ($doc_root . '/includes/send_function.php');
 ?>
