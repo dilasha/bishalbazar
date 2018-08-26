@@ -27,7 +27,7 @@ if (isset($_SESSION['user'])) {
 <script type="text/javascript" src="http://quiet-ravine-14266.herokuapp.com/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://quiet-ravine-14266.herokuapp.com/slider/PgwSlider-master/pgwslider.min.js"></script>
 
-<script type="text/javascript" src="http://quiet-ravine-14266.herokuapp.com/js/google_map.js"></script>
+<!-- <script type="text/javascript" src="http://quiet-ravine-14266.herokuapp.com/js/google_map.js"></script> -->
 
 <?php
 include ($doc_root . '/includes/send_function.php');

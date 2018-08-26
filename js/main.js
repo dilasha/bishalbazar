@@ -11,22 +11,22 @@ $(document).ready(function(){
 
     
 
-    //Contact Page Map Centering
-    var hw = $('header').width() + 50;
-    var mw = $('#map').width();
-    var wh = $(window).height();
-    var ww = $(window).width();
+    // //Contact Page Map Centering
+    // var hw = $('header').width() + 50;
+    // var mw = $('#map').width();
+    // var wh = $(window).height();
+    // var ww = $(window).width();
 
-    $('#map').css({
-        "max-width" : mw,
-        "height" : wh
-    });
+    // $('#map').css({
+    //     "max-width" : mw,
+    //     "height" : wh
+    // });
 
-    if(ww>1100){
-         $('#map').css({
-            "margin-left" : hw
-        });
-    }
+    // if(ww>1100){
+    //      $('#map').css({
+    //         "margin-left" : hw
+    //     });
+    // }
 
    
 
