@@ -11,7 +11,7 @@ include ($doc_root . '/includes/head.php');
 
 	<body>
 		<?php
-		include ($doc_root . '/Team6/includes/navigation.php');
+		include ($doc_root . '/includes/navigation.php');
 		?>
 		<div class="container">
 			<div class="content">
@@ -23,7 +23,7 @@ include ($doc_root . '/includes/head.php');
 					while ($row = oci_fetch_assoc($parse)) {
 						echo "<li>";
 						echo "<a href='" . $row['SLIDERLINK'] . "'>";
-						echo "<img style='//height:100%;' data-description='" . $row['SLIDERDESC'] . "' src='http://http://quiet-ravine-14266.herokuapp.com/images/sliders/" . $row['SLIDERIMG'] . "' />";
+						echo "<img style='//height:100%;' data-description='" . $row['SLIDERDESC'] . "' src='http://quiet-ravine-14266.herokuapp.com/images/sliders/" . $row['SLIDERIMG'] . "' />";
 						echo "<span><h2 style='font-size=20px !important;' >" . $row['SLIDERTITLE'] . "</h2></span>";
 						echo "</a>";
 						echo "</li>";
